@@ -1,5 +1,7 @@
 package ie.atu.productv4;
 
+import productv4.Music;
+
 public class ProductDB {
 
     public static Product getProduct(String productCode) {
@@ -59,7 +61,7 @@ public class ProductDB {
         }
 
         if (productCode.equalsIgnoreCase("pink")) {
-            Music myMusic = new Music();
+            productv4.Music myMusic = new Music();
             myMusic.setCode(productCode);
             myMusic.setDescription("Wish you were here");
             myMusic.setPrice(8.00);
@@ -74,7 +76,7 @@ public class ProductDB {
             myTV.setDescription("Sony TV");
             myTV.setPrice(819.00);
             myTV.setScreensize("55");
-            myTV.setManufacture("Sony");
+            myTV.setManufacturer("Sony");
             p = myTV;
         }
             return p;
