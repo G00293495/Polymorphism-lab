@@ -1,4 +1,6 @@
-package ie.atu.productv3;
+package ie.atu.productv4;
+
+import ie.atu.productv4.Product;
 
 public class Software extends Product {
 
