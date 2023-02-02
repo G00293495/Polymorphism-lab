@@ -36,6 +36,7 @@ public class ProductApp {
             System.out.print("Continue? (y/n): ");
             choice = sc.nextLine();
             System.out.println();
+
         }
     }
 }
