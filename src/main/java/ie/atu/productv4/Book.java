@@ -1,15 +1,29 @@
-package ie.atu.productv3;
+package ie.atu.productv4;
 
 import java.text.NumberFormat;
 
-public class Product {
+public class Book extends Product {
 
+    private String author;
     private String code;
     private String description;
     private double price;
     protected static int count = 0;
 
-    public Product() {
+    public Book() {
+        description = "";
+        code = "";
+        author = "";
+        price = 0.0;
+        count++;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public void setCode(String code) {
@@ -41,9 +55,8 @@ public class Product {
         return currency.format(price);
     }
 
-    @Override
     public String toString() {
-        return description;
+        return description + " by " + author;
     }
 
     public static int getCount() {

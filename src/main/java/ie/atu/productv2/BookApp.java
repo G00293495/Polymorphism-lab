@@ -1,5 +1,7 @@
 package ie.atu.productv2;
 
+import ie.atu.productv4.Book;
+
 import java.util.Scanner;
 
 public class BookApp {

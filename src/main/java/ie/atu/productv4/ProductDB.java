@@ -1,4 +1,4 @@
-package ie.atu.productv3;
+package ie.atu.productv4;
 
 public class ProductDB {
 
@@ -57,7 +57,18 @@ public class ProductDB {
             mySoftware.setVersion("Oracle 3.0");
             p = mySoftware;
         }
-        return p;
+
+        if (productCode.equalsIgnoreCase("pink")) {
+            Music myMusic = new Music();
+            myMusic.setCode(productCode);
+            myMusic.setDescription("Wish you were here");
+            myMusic.setPrice(8.00);
+            myMusic.setLabel("Columbia Group");
+            myMusic.setArtist("Pink Floyd");
+            p = myMusic;
+        }
+            return p;
+
     }
 }
 
