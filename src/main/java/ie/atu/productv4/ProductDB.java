@@ -67,6 +67,16 @@ public class ProductDB {
             myMusic.setArtist("Pink Floyd");
             p = myMusic;
         }
+
+        if (productCode.equalsIgnoreCase("kdl43")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("Sony TV");
+            myTV.setPrice(819.00);
+            myTV.setScreensize("55");
+            myTV.setManufacture("Sony");
+            p = myTV;
+        }
             return p;
 
     }
